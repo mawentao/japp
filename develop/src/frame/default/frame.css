@@ -1,0 +1,44 @@
+/* frame.css, (c) 2016 mawentao */
+#frame-head {position:absolute;top:0;left:0;right:0;height:50px;background-color:#4288b8;border-bottom:solid 1px #fff;}
+#frame-body {position:absolute;top:50px;left:0;right:0;bottom:0;}
+#frame-west {position:absolute;left:0;top:0;bottom:0;width:200px;overflow:auto;background-color:#ededed;}
+#frame-slide {position:absolute;left:200px;top:0;bottom:0;width:7px;
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  cursor: pointer;
+  background: #eee url(sprite.png) no-repeat;
+  background-position: 0 center;
+  z-index:10;
+}
+#frame-center {position:absolute;left:207px;right:0;top:0;bottom:0;overflow:auto;padding:10px;}
+
+.logo {text-decoration:none;color:#fff;font-family:Arial;font-weight:bold;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-size: 22px;
+}
+
+.menuul {display:inline-block;margin:0;padding:0;position: absolute;left:209px;bottom: 0;}
+.menuul li {list-style-type:none;margin:0;padding:0;float:left;line-height:39px;}
+.menuul li a {text-decoration:none;color:#fff;font-size:14px;padding:12px 20px;font-family:'microsoft yahei';}
+.menuul li a:hover,.menuul li a.active {text-decoration:none;color:#666;background-color:#fff;color:#666;text-shadow:0 0 1px #999;}
+
+.leftmenu {display:none;}
+.leftmenu,.leftmenu ul,.leftmenu li{list-style-type:none;margin:0;padding:0}
+.leftmenu {width:100%;}
+.leftmenu>li {border-top:solid 1px #fff; border-bottom:solid 1px #c8c8c8;}
+.leftmenu>li>a {display:block; padding:10px 30px; font-weight:bold;font-size:13px;font-family:"microsoft yahei";}
+.menu-close>ul {display:none;}
+.menu-close>a { background:url(hide-show.png) no-repeat 10px -48px;} 
+.menu-open>a { background:url(hide-show.png) no-repeat 10px -170px;}
+.menu-open>ul {display:block;}
+.submenu>li>a {display:block; padding:7px 30px;font-size:13px;font-family:"microsoft yahei";}
+.leftmenu a{color:#333; text-decoration:none;}
+.leftmenu a:hover{text-decoration:none;}
+.leftmenu>li>a.active {background-color:#fff;border-left:solid 4px;}
+.submenu>li>a.active {background-color:#fff;border-left:solid 4px;border-top:solid 1px; border-bottom:solid 1px;}
+.leftmenu a:hover {color:#3b7aa5;}
+.leftmenu>li>a.active,.submenu>li>a.active {border-left-color:#4288b8;}
+.submenu>li>a.active {border-top-color:#4288b8;border-bottom-color:#4288b8;}
