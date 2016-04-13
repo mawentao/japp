@@ -45,6 +45,7 @@ require.config({
         {name:'frame', location:'frame', main:'main'},
         {name:'jquery', location:'../libs/jquery/1.11.2', main:'jquery.min'},
         {name:'qrcode', location:'../libs/qrcode', main:'qrcode'},
+        {name:'mwt', location:'../libs/mwt/3.0.0', main:'mwt.min'},
         {name:'er', location:'../libs/er/3.0.3', main:'main'}
     ]
 });

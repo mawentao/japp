@@ -1,0 +1,85 @@
+/* frame.css, (c) 2016 mawentao */
+#frame-head {position:absolute;top:0;left:0;right:0;height:50px;background-color:#4288b8;}
+#frame-logo {position:absolute;top:0;left:0;width:180px;bottom:0;background:#FC8B1C;}
+#frame-logo a {
+    background:url(logo.png) no-repeat 5px 2px;display:block;width:100%;line-height:50px;padding-left:95px;
+    color:#fcfcfc;font-family:'Arial','microsoft yahei';font-size:13px;
+    text-decoration:none;
+}
+#frame-menu {position:absolute;top:0;left:180px;bottom:0;right:0;background:#3D3D45;}
+.menuul {display:inline-block;margin:0;padding:0;position: absolute;left:10px;bottom: 0;}
+.menuul li {list-style-type:none;margin:0;padding:0;float:left;line-height:50px;}
+.menuul li a {text-decoration:none;color:#fff;font-size:15px;padding:12px 20px;font-family:'microsoft yahei';}
+.menuul li a:hover,.menuul li a.active {text-decoration:none;color:#FF8907;}
+.menuul li a i {margin-right:3px;}
+
+.comdiv {float:right;line-height:50px;color:#fff;font-family:'microsoft yahei';font-size:14px;padding-right:10px;}
+.comdiv a {text-decoration:none;color:#fff;}
+.comdiv .fa {margin-right:3px;}
+
+.comdiv .sobar {
+    border-radius:300px; border:solid 1px #eee;margin-right:10px;background:#fff;
+    line-height: 26px;
+    display: inline-block;
+    padding-left:15px;
+}
+.comdiv .sobar input[type=text] {
+    padding-right:5px;
+    border:none;
+    outline: 0;
+    width:200px;
+}
+.comdiv .sobar i {cursor:pointer;color:#666;}
+
+
+#frame-body {position:absolute;top:50px;left:0;right:0;bottom:0;}
+#frame-west {position:absolute;left:0;top:0;bottom:0;width:180px;overflow:auto;background-color:#f1f1f1;}
+#frame-center {position:absolute;left:180px;right:0;top:0;bottom:0;overflow:auto;padding:5px 10px;}
+
+
+.leftmenu {display:none;}
+.leftmenu,.leftmenu ul,.leftmenu li{list-style-type:none;margin:0;padding:0}
+.leftmenu {width:100%;}
+.leftmenu>li {border-top:solid 1px #fff; border-bottom:solid 1px #c8c8c8;}
+.leftmenu>li>a {display:block; padding:10px 30px;font-size:13px;font-family:"microsoft yahei";color:#666;}
+.menu-close>ul {display:none;}
+.menu-close>a { background:url(hide-show.png) no-repeat 10px -48px;} 
+.menu-open>a { background:url(hide-show.png) no-repeat 10px -170px;}
+.menu-open>ul {display:block;}
+.submenu>li>a {display:block; padding:7px 30px;font-size:12px;font-family:"microsoft yahei";}
+.leftmenu a{color:#666; text-decoration:none;}
+.leftmenu a:hover{text-decoration:none;}
+.leftmenu>li>a.active {background-color:#fff;border-left:solid 4px;}
+.submenu>li>a.active {background-color:#fff;border-left:solid 4px;border-top:solid 1px; border-bottom:solid 1px;}
+.leftmenu a:hover {color:#FF8907;}
+.leftmenu>li>a.active,.submenu>li>a.active {border-left-color:#FF8907;color:#FF8907;}
+.submenu>li>a.active {border-top-color:#FF8907;border-bottom-color:#FF8907;color:#FF8907;}
+
+
+/* mwt-didi */
+.form-control:focus {
+    border-color: #ff9600;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,175,0,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,175,0,0.6);
+}
+.mwt-bar button {font-size:13px;}
+.mwt-search-primary {border:solid 2px #ff9600;}
+.mwt-search-primary input[type=text] {font-size:12px;}
+.mwt-search-primary .submit { background-color:#ff9600; border-left:solid 2px #ff9600;font-size:12px;}
+.mwt-search-primary .submit:hover {background-color: #ff8800;}
+.mwt-btn-primary {color: #fff;background-color:#ff9600;border-color:#ff9600;}
+.mwt-btn-primary:hover, .mwt-btn-primary:focus, .mwt-btn-primary:active, .mwt-btn-primary.active, .open .dropdown-toggle.mwt-btn-primary {
+    color:#fff; background-color: #ff8800; border-color: #ff9600;
+}
+
+.mwt-panel {border-color:#eee;}
+.mwt-panel>.header {border-bottom-color:#eee;height:auto;line-height:inherit;padding:0;background:#f1f1f1;}
+.mwt-bar {background:#f1f1f1;}
+
+/*
+.ui-widget-header {border:1px solid #ff9600;background:#ff8800;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {color:#FF8907;border:1px solid #ff9600;font-weight:200;}
+.ui-datepicker th {font-weight:200;}
+.ui-widget-content {border-color:#ff9600;}
+*/
