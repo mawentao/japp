@@ -96,7 +96,7 @@ define(function(require){
 
     // 左部导航
     function init_nav() {
-        //alert(pluginConfList.length);
+        init_toggle();
         var code = "";
         for (var i=0; i<pluginConfList.length; ++i) {
             var navitems = pluginConfList[i].menu;

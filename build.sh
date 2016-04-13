@@ -8,28 +8,32 @@
 # @brief:  build.sh
 ####################################################
 
-timestamp=`date +%s`
-date=`date "+%Y-%m-%d %H:%M:%S"`
+product='japp'
+version='1.0'
+outdir='release/1.0'
+distfile="$product-v$version.zip"
 
-
-function read_file()
+function cpfiles()
 {
-    if [ ! -f $1 ]; then
-        echo "$1 is not file";
-        return;
-    fi
-    cat $1 | while read line
-	do
-		echo $line
+    for i in $@; do
+		cp -r $i $outdir
     done
 }
 
-if [ "$1"x = ""x ] ; then
-    echo "usage: $0 file";
-    exit
+if [ ! -d $outdir ];then
+	mkdir -p $outdir
 fi
-read_file $1
 
-echo '!!!THE END!!!'
+rm -rf $outdir/$distfile
+
+cp -r develop $outdir
+
+cd $outdir; mv develop japp
+
+zip -r $distfile japp
+
+rm -rf japp
+
+cd ../../
 
 exit 0
