@@ -5,5 +5,16 @@ define(function(require){
         var html = require("er/tpl!plugin/japp/view/plugin.html");
         require('frame').showPage(html);
     };
+
+    o.startupAction = function() {
+        var html = require("er/tpl!plugin/japp/view/startup.html");
+        require('frame').showPage(html);
+    };
+
+    o.urlmapAction = function() {
+        var html = require("er/tpl!plugin/japp/view/urlmap.html");
+        require('frame').showPage(html);
+    };
+
     return o;
 });

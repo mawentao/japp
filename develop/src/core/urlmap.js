@@ -26,7 +26,9 @@ define(function(require){
             if (!G.urlmapping[p]) {
                 var item = {path:pathList[i], type:'core/eraction'};
                 require("er/controller").registerAction(item);
-                log.debug("map url path [#"+pathList[i]+"] onto javascript plugin/"+plugin+"/controller/"+controller+".js#"+action+"Action");
+                var c = item.path=='/'+plugin ? 'index' : controller;
+                var a = item.path=='/'+plugin+'/'+controller+'/'+action ? action : 'index';
+				log.debug("map url path [#"+pathList[i]+"] onto javascript plugin/"+plugin+"/controller/"+c+".js#"+a+"Action");
                 G.urlmapping[p] = true;
             }
         }

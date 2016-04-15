@@ -1,0 +1,11 @@
+<h1>JApp的URL映射机制</h1>
+
+JApp采用三层控制接口来映射URL：#/plugin/controller/action：
+<ul>
+  <li>plugin: 插件，所有插件都定义在plugin目录下</li>
+  <li>controller: 控制器，插件的控制器定义在插件目录的controller目录下</li>
+  <li>action: 执行方法名，定义在具体的controller代码文件中的方法名（真正的方法名后面需加上Action）。</li>
+</ul>
+
+<p>举例：#/japp/doc/startup路径最终会定位到 plugin/japp/controller/doc.js 代码文件的 startupAction方法</p>
+

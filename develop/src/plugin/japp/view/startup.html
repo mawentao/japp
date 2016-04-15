@@ -1,0 +1,24 @@
+<h1>JApp首次加载过程</h1>
+
+<ol>
+<li>启动ER（URL映射引擎）: require('core/urlmap').start();</li>
+<li>加载全部插件：
+  <ul>
+    <li>将插件配置的UrlPath添加到ER</li>
+    <li>将插件配置添加到frame</li>
+  </ul>
+</li>
+<li>执行ErAction，core/eraction.js
+  <ul>
+    <li>解析UrlPath，提取plugin，controller，action</li>
+    <li>初始化frame</li>
+    <li>active menu or navigation of frame</li>
+    <li>根据plugin，controller，action转到具体的js代码执行</li>
+  </ul>
+</li>
+</ol>
+
+<h2>首页地址</h2>
+JApp在启动ER时，会注册'index/index/index'，它是JApp的首页地址，指向plugin/index/controllers/index.js文件的indexAction方法。请在此处跳转到具体的首页路径。
+
+
